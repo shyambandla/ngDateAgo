@@ -1,6 +1,6 @@
 {
   "name": "ng-date-ago",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "peerDependencies": {
     "@angular/common": "^12.2.0",
     "@angular/core": "^12.2.0"
@@ -13,5 +13,6 @@
     "name": "Shyam Bandla",
     "email": "shyambandla143@gmail.com",
     "url": "https://github.com/shyambandla"
-  }
+  },
+  "homepage": "https://github.com/shyambandla/ngDateAgo.git"
 }
