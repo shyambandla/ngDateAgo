@@ -1,7 +1,42 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": "9772edbb-18e6-4540-9dae-341f483fa34d"
+  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-  }
+    "ngDateAgo": {
+      "projectType": "library",
+      "root": "projects/ng-date-ago",
+      "sourceRoot": "projects/ng-date-ago/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/ng-date-ago/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ng-date-ago/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/ng-date-ago/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ng-date-ago/src/test.ts",
+            "tsConfig": "projects/ng-date-ago/tsconfig.spec.json",
+            "karmaConfig": "projects/ng-date-ago/karma.conf.js"
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "ngDateAgo"
 }
