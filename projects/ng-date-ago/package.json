@@ -8,11 +8,12 @@
   "dependencies": {
     "tslib": "^2.3.0"
   },
-  "description": "Test Release",
+  "description": "Date Ago and Time Left",
   "author": {
     "name": "Shyam Bandla",
     "email": "shyambandla143@gmail.com",
     "url": "https://github.com/shyambandla"
   },
-  "homepage": "https://github.com/shyambandla/ngDateAgo.git"
+  "homepage": "https://github.com/shyambandla/ngDateAgo.git",
+  "license" : "MIT"
 }
